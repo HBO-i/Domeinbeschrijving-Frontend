@@ -11,10 +11,10 @@ services:
       - REACT_APP_API_ENDPOINT=${REACT_APP_API_ENDPOINT}
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.${CI_PROJECT_ID}.entrypoints=websecure"
-      - "traefik.http.routers.${CI_PROJECT_ID}.rule=Host(`${APP_HOST}`)"
-      - "traefik.http.routers.${CI_PROJECT_ID}.tls=true"
-      - "traefik.http.routers.${CI_PROJECT_ID}.tls.certresolver=lets-encrypt"
+      - "traefik.http.routers.hbo-i-fe.entrypoints=websecure"
+      - "traefik.http.routers.hbo-i-fe.rule=Host(`domeinbeschrijving.hbo-i.nl`)"
+      - "traefik.http.routers.hbo-i-fe.tls=true"
+      - "traefik.http.routers.hbo-i-fe.tls.certresolver=lets-encrypt"
       - "traefik.docker.network=traefik"
 
 networks:
