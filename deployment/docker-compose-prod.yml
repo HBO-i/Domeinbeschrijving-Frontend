@@ -5,6 +5,8 @@ services:
     build:
       context: ..
       dockerfile: ./deployment/Dockerfile
+      args:
+        REACT_APP_API_ENDPOINT: api.domeinbeschrijving.hbo-i.nl
     networks:
       - traefik
     labels:

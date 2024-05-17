@@ -10,4 +10,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Start application
-        run: docker compose -f ./deployment/docker-compose-prod.yml up -d --build --arg REACT_APP_API_ENDPOINT=api.domeinbeschrijving.hbo-i.nl
+        run: docker compose -f ./deployment/docker-compose-prod.yml up -d --build
