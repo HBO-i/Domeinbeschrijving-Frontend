@@ -1,0 +1,50 @@
+.search-page {
+  @include page-padding;
+  @include divider-shadow;
+
+  &__header {
+    margin-bottom: 2rem;
+
+    @include respond-to('screen-large') {
+      margin-bottom: 4rem;
+    }
+
+    .title {
+      font-size: 2rem;
+
+      @include respond-to('screen-large') {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__result {
+    &--skills {
+      .description-item__block {
+        min-width: 20rem !important;
+      }
+    }
+  }
+
+  &__result-section {
+    .title {
+      &--small {
+        font-size: 1.5rem;
+
+        @include respond-to('screen-large') {
+          font-size: 2rem;
+        }
+      }
+
+      margin-bottom: 2rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+
+      @include respond-to('screen-large') {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}

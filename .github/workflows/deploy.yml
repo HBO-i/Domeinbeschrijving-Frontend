@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start application
+        run: docker compose -f ./deployment/docker-compose-prod.yml up -d --build
+        env:
+          REACT_APP_API_ENDPOINT: api.domeinbeschrijving.hbo-i.nl
