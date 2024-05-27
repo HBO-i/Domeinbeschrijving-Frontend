@@ -211,7 +211,7 @@ const HBOFilter: FunctionComponent<Props> = (props) => {
                                     <span dangerouslySetInnerHTML={{ __html: __('orderOfTasks')}} />
 
                                     <div className={'hbo-filter__tooltip hbo-filter__tooltip--top'}>
-                                        <Tooltip content={'Door te slepen met de 3 zwarte knoppen bepaal je de volgorde waarin de gevonden beroepstaken getoond worden.'} />
+                                        <Tooltip content={__('filter.orderTooltip')} />
                                     </div>
                                 </span>
                             </div>

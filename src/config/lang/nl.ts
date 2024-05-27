@@ -74,6 +74,8 @@ const nl = {
             <br />
             Om binnen de diversiteit vergelijkbaarheid mogelijk te maken onderscheiden we vier beheersingsniveaus, conform de definities in het Zelcommodel.
         `,
+
+        orderTooltip: 'Door te slepen met de 3 zwarte knoppen bepaal je de volgorde waarin de gevonden beroepstaken getoond worden.'
     },
 
     searchInDomainDescription: 'Zoeken in domeinbeschrijving',

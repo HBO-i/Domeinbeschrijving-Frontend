@@ -74,7 +74,9 @@ const en = {
              <br />
              To enable comparability within the diversity, we distinguish four control levels, in accordance with the definitions in the Zelcom model.
 
-        `
+        `,
+
+        orderTooltip: 'By dragging the 3 black buttons you determine the order in which the found professional tasks are displayed.'
     },
 
     searchInDomainDescription: 'Search in domain description',
@@ -84,8 +86,8 @@ const en = {
     export: 'Export',
     contact: 'Contact',
 
-    allOn: 'Alles on',
-    allOff: 'Alles off',
+    allOn: 'Everything on',
+    allOff: 'Everything off',
 
     schools: 'Schools',
 
