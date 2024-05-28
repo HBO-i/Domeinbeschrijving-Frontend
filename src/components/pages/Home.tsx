@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import {Page, route, useLocale} from 'b302-frontend-library';
 import {useNavigate} from 'react-router-dom';
 

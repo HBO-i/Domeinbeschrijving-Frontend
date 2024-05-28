@@ -15,7 +15,7 @@ import {useDownloadURLS} from '../../../config/Url';
 interface Props {}
 
 const NavBar: FunctionComponent<Props> = (props) => {
-    const { __, setLocale } = useLocale();
+    const { __, locale, setLocale } = useLocale();
     const location = useLocation();
     const navigate = useNavigate();
     const [params] = useSearchParams();
